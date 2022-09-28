@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <div class="content">
+      <label for="name" id="name-label">Name</label>
+      <input type="text" id="name" name="Name" placeholder="Enter your name" required ></div>
+       <div class="content">
+      <label for="email" id="email-label">Email</label>
+      <input type="email" id="email" name="Email" placeholder="Enter your Email" required></label></div>
+       <div class="content">
+      <label for="number" id="number-label">Age</label>
+      <input type="number" id="number" min="10" max="99" name="number"  placeholder="Age"></div>
+       <div class="content">
+      <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
+        <select type="dropdown" id="dropdown" value="dropdown" name="dropdown" placeholder="select current role">
+<option value="student">Student</option>
+<option value="fulltimejob">Full time Job</option>
+<option value="fulltimelearner">Full time learner</option>
+<option value="prefernottosay">Prefer not to say</option>
+<option value="others">Others</option>
+</select></div>
+ <div class="content">
+<label for="radio" id="radio">Would you recommend us to a friend?</label>
+<label for="yes" id="yes">
+  <input type="radio" id="yes" name="radio" value="Definitely" >Definitely</label>
+ <label for="maybe" id="maybe">
+  <input type="radio" id="maybe" name="radio"  value="Maybe" >Maybe</label>
+   <label for="notsure" id="notsure">
+  <input type="radio" id="notsure" name="radio" value="Notsure" >Notsure</label>
+  </div>
+   <div class="content">
+  <label for="checkbox">What is your favorite feature of us?</label>
+  <label for="front-end Projects">
+<input type="checkbox" id="checkbox" value="Front-end Projects"> Front-end Projects</label>
+<label for="back-end Projects">
+<input type="checkbox" id="checkbox" value="Back-end Projects"> Back-end Projects</label>
+<label for="data Visualization">
+<input type="checkbox" id="checkbox" value="data Visualization"> Data Visualization</label>
+<label for="open Source Community">
+<input type="checkbox" id="checkbox" value="open Source Community"> Open Source Community</label>
+<label for="Gitter help rooms">
+<input type="checkbox" id="checkbox" value="Gitter help rooms"> Gitter help rooms</label>
+<label for="videos">
+<input type="checkbox" id="checkbox" value="videos"> Videos</label>
+<label for="city Meetups">
+<input type="checkbox" id="checkbox" value="city Meetups"> City Meetups</label>
+<label for="wiki">
+<input type="checkbox" id="checkbox" value="wiki"> Wiki</label>
+<label for="forum">
+<input type="checkbox" id="checkbox" value="forum"> Forum</label>
+<label for="additional Courses">
+<input type="checkbox" id="checkbox" value="additional Courses"> Additional Courses</label>
+</div>
+ <div class="content">
+<label for="textarea">Any comments or suggestions?
+  <textarea name="textarea" placeholder="Enter your comment here..."></textarea>
+</label>
+</div>
+<button type="submit" id="submit" value="submit">Submit</button>
+  </form>
+  </body>
+  </html>
